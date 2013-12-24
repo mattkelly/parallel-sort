@@ -1,6 +1,8 @@
-/*
- * TODO header
- */
+/***********************************************************
+ * Definitions for bitonic sorting on the CPU and GPU.
+ *
+ * Author: Matt Kelly
+ ***********************************************************/
 
 #include <cstdlib>
 #include <cstdio>

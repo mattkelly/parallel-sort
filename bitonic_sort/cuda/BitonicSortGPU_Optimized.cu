@@ -1,3 +1,9 @@
+/***********************************************************
+ *  Optimized bitonic sorting on the GPU.
+ *
+ * Author: Matt Kelly
+ ***********************************************************/
+
 #include <cmath>
 #include <cuda.h>
 #include <cuda_runtime_api.h>

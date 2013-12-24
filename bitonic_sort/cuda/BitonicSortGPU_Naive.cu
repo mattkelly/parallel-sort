@@ -1,3 +1,9 @@
+/***********************************************************
+ *  Bitonic sorting on the GPU.
+ *
+ * Author: Matt Kelly
+ ***********************************************************/
+
 #include <cmath>
 #include <cuda.h>
 #include <cuda_runtime_api.h>
@@ -18,7 +24,7 @@ __global__ void SortStepKernel_Naive( int *arrD, int length, int phase, int step
 	// int subarraySize = 1 << step; // Size of all subarrays
 	// int subarrayID = i % subarraySize; // ID of subarray this thread is in
 
-	int direction = ( (i & phase) == 0 ); // TODO
+	int direction = ( (i & phase) == 0 );
 
 	// Only lower thread IDs can swap
 	if( j > i ) {

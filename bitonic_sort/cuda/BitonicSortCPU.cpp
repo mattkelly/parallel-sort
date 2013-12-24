@@ -1,6 +1,8 @@
-/*
- * TODO header
- */
+/***********************************************************
+ *  Bitonic sorting on the CPU.
+ *
+ * Author: Matt Kelly
+ ***********************************************************/
 
 #include <ctime>
 #include <cstring>
